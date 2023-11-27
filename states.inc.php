@@ -56,7 +56,7 @@ $machinestates = [
     State::NEXT_TURN => [
         Fsm::NAME => "nextTurn",
         Fsm::TYPE => FsmType::GAME,
-        Fsm::ACTION => ['stNextTurn'],
+        Fsm::ACTION => 'stNextTurn',
         Fsm::PROGRESSION => true,
         Fsm::TRANSITIONS => ['' => State::GAME_END]
     ],

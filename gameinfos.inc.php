@@ -13,31 +13,31 @@
 $gameinfos = [
 
 // Name of the game in English (will serve as the basis for translation) 
-'game_name' => "",
+'game_name' => 'Empyreal: Spells & Steam ',
 
 // Game designer (or game designers, separated by commas)
-'designer' => '',
+'designer' => 'Trey Chambers',
 
 // Game artist (or game artists, separated by commas)
-'artist' => '',
+'artist' => ' Laura La Vito, Eunice Abigael Tiu',
 
 // Year of FIRST publication of this game. Can be negative.
-'year' => 0,
+'year' => 2020,
 
 // Game publisher (use empty string if there is no publisher)
-'publisher' => '',
+'publisher' => 'Level 99 Games',
 
 // Url of game publisher website
-'publisher_website' => '',
+'publisher_website' => 'https://www.level99games.com/',
 
 // Board Game Geek ID of the publisher
-'publisher_bgg_id' => 0,
+'publisher_bgg_id' => 11752,
 
 // Board game geek ID of the game
-'bgg_id' => 0,
+'bgg_id' => 220367,
 
 // Players configuration that can be played (ex: 2 to 4 players)
-'players' => [],
+'players' => [2, 3, 4, 5, 6],
 
 // Suggest players to play with this number of players. Must be null if there is no such advice, or if there is only one possible player configuration.
 // NB: the automatic lobby will try first the lowest number of players if this is not specified. So you _have to_ specify this parameter if the lowest player number is not compatible with the default options.
@@ -66,7 +66,8 @@ $gameinfos = [
 // Note: if you are NOT using any tie breaker, leave the empty string.
 //
 // Example: 'tie_breaker_description' => totranslate( "Number of remaining cards in hand" ),
-'tie_breaker_description' => '',
+'tie_breaker_description' => totranslate('Most Goods delivered, then most trains placed, then turn order'),
+'tie_breaker_split' => [10000, 100, 1],
 
 // If in the game, all losers are equal (no score to rank them or explicit in the rules that losers are not ranked between them), set this to true 
 // The game end result will display "Winner" for the 1st player and "Loser" for all other players
@@ -87,19 +88,19 @@ $gameinfos = [
 'language_dependency' => false,
 
 // Complexity of the game, from 0 (extremely simple) to 5 (extremely complex)
-'complexity' => 0,
+'complexity' => 3,
 
 // Luck of the game, from 0 (absolutely no luck in this game) to 5 (totally luck driven)
-'luck' => 0,
+'luck' => 2,
 
 // Strategy of the game, from 0 (no strategy can be setup) to 5 (totally based on strategy)
-'strategy' => 0,
+'strategy' => 3,
 
 // Diplomacy of the game, from 0 (no interaction in this game) to 5 (totally based on interaction and discussion between players)
-'diplomacy' => 0,
+'diplomacy' => 1,
 
 // Colors attributed to players
-'player_colors' => [],
+'player_colors' => ['161b1b', '30abe2', '59f800', 'd80004', 'fefefe', 'f6ed68'],
 
 // Favorite colors support : if set to "true", support attribution of favorite colors based on player's preferences (see reattributeColorsBasedOnPreferences PHP method)
 // NB: this parameter is used only to flag games supporting this feature; you must use (or not use) reattributeColorsBasedOnPreferences PHP method to actually enable or disable the feature.
@@ -131,9 +132,10 @@ $gameinfos = [
 // Each paragraph must be wrapped with totranslate() for translation and should not contain html (plain text without formatting).
 // A good length for this text is between 100 and 150 words (about 6 to 9 lines on a standard display)
 'presentation' => [
-    totranslate(),
-    totranslate(),
-    totranslate()
+    totranslate('Empyreal: Spells & Steam is a game of railway building, company development, and contract fulfillment in an
+early-industrial fantasy world.'),
+    totranslate('As a captain of industry, it\'s your job to bring the industrial age to this world of magic. Build railways to connect key resources to your network, then supply them to cities around the world.'),
+    totranslate('Each magical resource you harvest will enable new technological developments that improve your capabilities. Each contract you fulfill will build up your company\'s infrastructure, leading to the development of new company-specific powers. Mine mana from the land to enable the construction of more lines, balancing the opportunities of the moment against the depleting environment and the machinations of your competitors.')
 ],
 
 //////// BGA SANDBOX ONLY PARAMETERS (DO NOT MODIFY)
