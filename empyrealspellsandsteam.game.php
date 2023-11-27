@@ -2,7 +2,7 @@
  /**
   *------
   * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
-  * __GameNameUC__ implementation : © <Your name here> <Your email address here>
+  * EmpyrealSpellsAndSteam implementation : © <Your name here> <Your email address here>
   * 
   * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
   * See http://en.boardgamearena.com/#!doc/Studio for more information.
@@ -13,7 +13,7 @@
 require_once(APP_GAMEMODULE_PATH.'module/table/table.game.php');
 require_once('modules/constants.inc.php');
 
-class __GameNameUC__ extends Table
+class EmpyrealSpellsAndSteam extends Table
 {
     function __construct()
     {
@@ -25,7 +25,7 @@ class __GameNameUC__ extends Table
     protected function getGameName( )
     {
 		// Used for translations and stuff. Please do not modify.
-        return "__gamenamelc__";
+        return "empyrealspellsandsteam";
     }
 
     protected function setupNewGame($players, $options = [])

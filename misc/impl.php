@@ -1,6 +1,6 @@
 <?php
 
-class_alias('__GameNameUC__', 'GameImplName');
+class_alias('EmpyrealSpellsAndSteam', 'GameImplName');
 
 class GameState {
     function state_id(): string { return 0; }

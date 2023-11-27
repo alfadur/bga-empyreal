@@ -1,3 +1,3 @@
 <?php 
 // Please do not modify this file.
-$game_version___gamenamelc__ ="999999-9999";
+$game_version_empyrealspellsandsteam ="999999-9999";
