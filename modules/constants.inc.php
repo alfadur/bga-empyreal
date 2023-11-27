@@ -43,6 +43,20 @@ interface HexDirection {
         self::LEFT, self::TOP_LEFT, self::TOP_RIGHT];
 }
 
+interface Terrain {
+    const DESERT = 0;
+    const FOREST = 1;
+    const GLACIER = 2;
+    const LAKE = 3;
+    const LAVA = 4;
+    const MOUNTAIN = 5;
+    const WASTELAND = 6;
+    const CITY = 7;
+
+    const ALL = [self::DESERT, self::FOREST, self::GLACIER,
+        self::LAKE, self::LAVA, self::MOUNTAIN, self::CITY];
+}
+
 const TILE_COORDS_AB = [
     [0, 0], [1, 0], [2, 0], [3, 0], [4, 0],
     [0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
