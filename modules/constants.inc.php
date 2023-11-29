@@ -74,3 +74,105 @@ const TILE_COORDS_C = [
     [2, 4], [3, 4], [4, 4], [5, 4], [6, 4],
     [3, 5], [4, 5], [5, 5], [6, 5], [7, 5],
 ];
+
+interface TileKind {
+    const AB = 0;
+    const C = 1;
+}
+
+const BOARD_LAYOUT = [
+    2 => [
+        [
+            'start' => [0, 0],
+            'kind' => TileKind::AB
+        ],
+        [
+            'start' => [5, 0],
+            'kind' => TileKind::AB
+        ],
+        [
+            'start' => [6, 6],
+            'kind' => TileKind::AB
+        ],
+    ],
+    3 => [
+        [
+            'start' => [0, 0],
+            'kind' => TileKind::AB
+        ],
+        [
+            'start' => [5, 0],
+            'kind' => TileKind::AB
+        ],
+        [
+            'start' => [6, 6],
+            'kind' => TileKind::AB
+        ],
+    ],
+    4 => [
+        [
+            'start' => [0, 0],
+            'kind' => TileKind::C
+        ],
+        [
+            'start' => [6, 1],
+            'kind' => TileKind::AB
+        ],
+        [
+            'start' => [3, 6],
+            'kind' => TileKind::AB
+        ],
+        [
+            'start' => [8, 7],
+            'kind' => TileKind::C
+        ],
+    ],
+    5 => [
+        [
+            'start' => [0, 0],
+            'kind' => TileKind::C
+        ],
+        [
+            'start' => [5, 0],
+            'kind' => TileKind::C
+        ],
+        [
+            'start' => [6, 6],
+            'kind' => TileKind::AB
+        ],
+        [
+            'start' => [6, 12],
+            'kind' => TileKind::C
+        ],
+        [
+            'start' => [11, 12],
+            'kind' => TileKind::C
+        ],
+    ],
+    6 => [
+        [
+            'start' => [0, 0],
+            'kind' => TileKind::C
+        ],
+        [
+            'start' => [5, 0],
+            'kind' => TileKind::C
+        ],
+        [
+            'start' => [10, 0],
+            'kind' => TileKind::C
+        ],
+        [
+            'start' => [3, 6],
+            'kind' => TileKind::C
+        ],
+        [
+            'start' => [8, 6],
+            'kind' => TileKind::C
+        ],
+        [
+            'start' => [13, 6],
+            'kind' => TileKind::C
+        ],
+    ]
+];
